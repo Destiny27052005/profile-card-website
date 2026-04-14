@@ -1,6 +1,12 @@
-
+import { useState, useEffect } from "react";
 
 function ProfileCard() {
+    const [time, setTime] = useState(Date.now());
+
+    useEffect(() => {
+        const interval = setInterval(() => setTime(Date.now()), 1000)
+        return () => clearInterval(interval)
+    }, [])
 
     return (
         <>
@@ -10,7 +16,7 @@ function ProfileCard() {
                 </figure>
                 <h2 data-testid="test-user-name">Adekunle Oluwatobiloba Destiny</h2>
                 <p data-testid="test-user-bio">Frontend Developer & Engineering Student | Turning ideas into web reality| Solving probems with code and logic.</p>
-                <p data-testid="test-user-time">{ }</p>
+                <p data-testid="test-user-time">Current Time: {time}</p>
                 <section>
                     <h3>Hobbies</h3>
                     <ul data-testid="test-user-hobbies">
@@ -29,9 +35,9 @@ function ProfileCard() {
                 </section>
 
                 <nav data-testid="test-user-social-links">
-                    <a href="" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-"></a>
-                    <a href="" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-"></a>
-                    <a href="" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-"></a>
+                    <a href="https://github.com/Destiny27052005" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">Github</a>
+                    <a href="https://www.tiktok.com/@tobiayo6?_r=1&_t=ZS-95XiBj8P8TK" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-tiktok">Tiktok</a>
+                    <a href="https:///www.linkedin.com/in/adekunle-oluwatobiloba-destiny-06480227a?utm_source=share_via&utm_content=profile&utm_meduim+member_android" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">Linkedin</a>
                 </nav>
             </article>
         </>
