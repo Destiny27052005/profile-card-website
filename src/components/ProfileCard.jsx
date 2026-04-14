@@ -1,4 +1,6 @@
+import { } from "lucide-react";
 import { useState, useEffect } from "react";
+import { FaGithub, FaLinkedin, FaTiktok } from "react-icons/fa";
 
 function ProfileCard() {
     const [time, setTime] = useState(Date.now());
@@ -10,7 +12,7 @@ function ProfileCard() {
 
     return (
         <>
-            <article data-testid="test-profile-card">
+            <article className="bg-[#1f1f1f] rounded-2xl p-4" data-testid="test-profile-card">
                 <figure>
                     <img src="https://photos.app.goo.gl/u15utF9uvLLKidsN6" alt="User Avatar" />
                 </figure>
@@ -28,16 +30,14 @@ function ProfileCard() {
                 <section>
                     <h3>Dislike</h3>
                     <ul data-testid="test-user-deslikes">
-                        <li data-testid="test-user-deslikes-"></li>
-                        <li data-testid="test-user-deslikes-"></li>
-                        <li data-testid="test-user-deslikes-"></li>
+                        <li data-testid="test-user-deslikes-noise">Noise</li>
                     </ul>
                 </section>
 
-                <nav data-testid="test-user-social-links">
-                    <a href="https://github.com/Destiny27052005" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">Github</a>
-                    <a href="https://www.tiktok.com/@tobiayo6?_r=1&_t=ZS-95XiBj8P8TK" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-tiktok">Tiktok</a>
-                    <a href="https:///www.linkedin.com/in/adekunle-oluwatobiloba-destiny-06480227a?utm_source=share_via&utm_content=profile&utm_meduim+member_android" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">Linkedin</a>
+                <nav className="flex space-x-2 text-2xl" data-testid="test-user-social-links">
+                    <a href="https://github.com/Destiny27052005" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github"><FaGithub /></a>
+                    <a href="https://www.tiktok.com/@tobiayo6?_r=1&_t=ZS-95XiBj8P8TK" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-tiktok"><FaTiktok /></a>
+                    <a href="https:///www.linkedin.com/in/adekunle-oluwatobiloba-destiny-06480227a?utm_source=share_via&utm_content=profile&utm_meduim+member_android" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin"><FaLinkedin /></a>
                 </nav>
             </article>
         </>
