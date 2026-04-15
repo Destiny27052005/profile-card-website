@@ -1,12 +1,31 @@
-# React + Vite
+# 📇 React Profile Card
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive, and reusable profile card component built with **React.js**. This project is designed to showcase user information with a clean UI and smooth interactions.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+* **Responsive Design:** Optimized for mobile, tablet, and desktop screens.
+* **Modular Components:** Built using functional components for high reusability.
+* **Dynamic Props:** Easily pass user data (name, role, image, social links) via props.
+* **Modern Styling:** Utilizes CSS3 (or Tailwind CSS) for a sleek, professional look.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+* **Framework:** [React.js](https://reactjs.org/)
+* **Build Tool:** [Vite](https://vitejs.dev/) (Recommended) or CRA
+* **Styling:** CSS3 / Tailwind CSS
+* **Icons:** React Icons / Lucide-React
+
+---
+
+## 💻 Getting Started
+
+Follow these steps to get the project running locally on your machine.
+
+### Prerequisites
+
+You need to have **Node.js** installed. You can check your version by running:
+```bash
+node -v
